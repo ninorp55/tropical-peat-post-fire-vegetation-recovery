@@ -2,6 +2,7 @@
 
 # Group project for Remote Sensing Applications
 
+Link to shared Google Doc: https://docs.google.com/document/d/1qTkcDyN7AtKCjYgG5d_xGhStIbaDFv-rOpp8YKx7Ukg/edit?usp=sharing
 
 ## Contents
 
