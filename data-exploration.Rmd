@@ -1,0 +1,59 @@
+---
+title: "Tropical Peatland Fires Data Exploration"
+author: "Nina"
+date: "2025-12-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# set working directory
+knitr::opts_knit$set(root.dir = "~/esdsrs/rsapp-project")
+```
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(sf)
+library(tmap)
+library(lubridate)
+```
+
+
+# MODIS fire alerts
+
+```{r}
+
+fire_alerts <- read_sf("input-data/nasa-firms-modis-fire-alerts/fire_archive_M-C61_697841.shp")
+```
+
+```{r visualize-fires-by-year}
+
+fire_alerts <- fire_alerts %>% 
+  filter(TYPE == 0,
+         CONFIDENCE >= 50)
+
+tmap_mode("view")
+
+fire_alert_map <- tm_basemap("Esri.WorldImagery")
+
+min_year_fire_alerts <- min(year(fire_alerts$ACQ_DATE))
+max_year_fire_alerts <- max(year(fire_alerts$ACQ_DATE))
+
+min_year_fire_alerts <- 2021
+max_year_fire_alerts <- 2024
+
+for (year in seq(min_year_fire_alerts,max_year_fire_alerts,1)) {
+  fire_alerts_year <- fire_alerts %>% 
+    filter(year(ACQ_DATE) == year) %>%
+    slice_sample(prop=0.01)
+  fire_alert_map <- fire_alert_map +
+    tm_shape(fire_alerts_year, name = paste("Fire alerts", year)) +
+    tm_dots(fill_alpha = 0.1, size = 0.1, col = "red", clustering = TRUE)
+} 
+
+fire_alert_map
+```
+
