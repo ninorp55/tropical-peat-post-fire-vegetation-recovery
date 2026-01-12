@@ -18,3 +18,14 @@ The repository contains the following files:
     - fire history (NASA FIRMS Modis fire alerts)
     - peat land map from Global Forest Watch (abandoned because old and not verifiable)
     
+## How to activate environment
+
+To activate the Python environment with all the necessary modules, run the following in the JupyterLab terminal (after navigating to the directory where `environment.yml` is stored):
+
+```
+conda env create -f environment.yml
+
+python -m ipykernel install --user --name=rsapp_peat
+```
+
+Then you should be able to select `rsapp_peat` as the kernel for your Jupyter notebook.
