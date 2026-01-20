@@ -4,3 +4,7 @@ input-data/indonesia-peatlands-gfw/
 input-data/fire-history-data/
 input-data/nasa-firms-modis-fire-alerts/
 input-data/ESA_IndonesiaCover
+.virtual_documents/
+anaconda_projects/
+input-data/ne_10m_admin_0_countries/
+input-data/ne_110m_admin_0_countries/
