@@ -8,6 +8,9 @@ https://docs.google.com/document/d/1qTkcDyN7AtKCjYgG5d_xGhStIbaDFv-rOpp8YKx7Ukg/
 Link to slides for first project draft presentation:
 https://docs.google.com/presentation/d/1hMx8IagdemcvNNVpfwhAvoVakXih--StNohOCC3tltI/edit?usp=sharing
 
+Link to LaTeX document on Overleaf:
+https://www.overleaf.com/project/696a338e211af76d4c3df0c2
+
 ## Contents
 
 The repository contains the following files:
