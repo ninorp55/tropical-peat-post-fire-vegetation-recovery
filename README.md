@@ -11,6 +11,9 @@ https://docs.google.com/presentation/d/1hMx8IagdemcvNNVpfwhAvoVakXih--StNohOCC3t
 Link to LaTeX document on Overleaf:
 https://www.overleaf.com/project/696a338e211af76d4c3df0c2
 
+Link to summary paper for introduction: 
+https://docs.google.com/document/d/13DtL6uRsZnSTXM3pWjAFqBn9h_4MvUC36HL-B6t8rNs/edit?usp=sharing
+
 ## Contents
 
 The repository contains the following files:
