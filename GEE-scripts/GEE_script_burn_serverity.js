@@ -93,13 +93,6 @@ var dNBRVis = {
   palette: ['blue', 'white', 'yellow', 'orange', 'red']
 };
 
-Map.centerObject(burn_raster, 6);
-
-Map.addLayer(preFire, nbrVis, 'NBR Pre-Fire');
-Map.addLayer(postFire, nbrVis, 'NBR Post-Fire');
-Map.addLayer(dNBR, dNBRVis, 'dNBR (Pre - Post)');
-
-
  // ------------------------------------------------------------
 // 8. Classify dNBR into burn severity classes
 //    (Explicitly masked to burn_raster)
@@ -154,7 +147,3 @@ Export.image.toDrive({
   crs: 'EPSG:4326',                  // WGS84 (change if needed)
   maxPixels: 1e13
 });
-
-
-(105.00966314032637, -3.5518049355658503)
-// this is just to center the map on Indonesia, you can change it to any coordinate you want to focus on.
