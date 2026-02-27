@@ -12,3 +12,5 @@ input-data/burned-area/
 input-data/modis-evi-test/
 output.nc.aux.xml
 output.nc
+input-data/land-cover/
+study_area.*
