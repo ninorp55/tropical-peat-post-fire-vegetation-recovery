@@ -14,3 +14,6 @@ output.nc.aux.xml
 output.nc
 input-data/land-cover/
 study_area.*
+output-data/
+input-data/EVI/
+*.vrt
