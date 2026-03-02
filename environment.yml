@@ -205,4 +205,3 @@ dependencies:
       - tblib==3.2.2
       - toolz==1.1.0
       - zict==3.0.0
-prefix: /Users/ninap/anaconda3/envs/rsapp_peat
