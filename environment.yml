@@ -127,7 +127,7 @@ dependencies:
   - numpy-base=2.3.5=py312h23175f9_0
   - openssl=3.6.1=hd24854e_1
   - packaging=25.0=py312hca03da5_1
-  - pandas=2.3.3=py312h3f644e9_1
+  - pandas=3.0.0=py312h3f644e9_0
   - parso=0.8.5=py312hca03da5_0
   - pcre2=10.46=h1dacb4a_0
   - pexpect=4.9.0=py312hca03da5_1
