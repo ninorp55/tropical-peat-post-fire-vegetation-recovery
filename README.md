@@ -35,3 +35,15 @@ python -m ipykernel install --user --name=rsapp_peat
 ```
 
 Then you should be able to select `rsapp_peat` as the kernel for your Jupyter notebook.
+
+These commands require the channel `conda-forge`. You can check if you have if by running
+
+```
+conda config --show channels
+```
+
+If this does not include `conda-forge`, install it by running
+
+```
+conda config --add channels conda-forge
+```
