@@ -26,17 +26,28 @@ The repository contains the following files:
     
 ## How to activate environment
 
-To activate the Python environment with all the necessary modules, run the following in the JupyterLab terminal (after navigating to the directory where `environment.yml` is stored):
+To activate the Python environment with all the necessary modules, run the following in the JupyterLab terminal (after navigating to the directory where `environment.yml` is stored, if necessary):
 
 ```
 conda env create -f environment.yml
+```
 
+Activate the environment by running
+```
+conda activate rsapp_peat
+```
+
+With the environment activated, run the following command to create a kernel:
+
+```
 python -m ipykernel install --user --name=rsapp_peat
 ```
 
-Then you should be able to select `rsapp_peat` as the kernel for your Jupyter notebook.
+Then you should be able to select `rsapp_peat` as the kernel for the Jupyter notebooks.
 
-These commands require the channel `conda-forge`. You can check if you have if by running
+**Note**
+
+Creating the environment requires the channel `conda-forge`. You can check if you have if by running
 
 ```
 conda config --show channels
@@ -46,4 +57,5 @@ If this does not include `conda-forge`, install it by running
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
