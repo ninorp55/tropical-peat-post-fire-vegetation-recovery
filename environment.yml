@@ -1,7 +1,9 @@
 name: rsapp_peat
 channels:
+  - conda-forge
   - defaults
 dependencies:
+  - _openmp_mutex=4.5=7_kmp_llvm
   - affine=2.4.0=py312hca03da5_0
   - aom=3.12.1=ha237518_0
   - appnope=0.1.4=py312hca03da5_0
@@ -12,12 +14,14 @@ dependencies:
   - bottleneck=1.4.2=py312h03d0aa3_1
   - branca=0.8.1=py312hca03da5_1
   - brotlicffi=1.2.0.0=py312h50f4ffc_0
-  - bzip2=1.0.8=h80987f9_6
-  - c-ares=1.34.5=h2ca31fc_0
-  - ca-certificates=2025.12.2=hca03da5_0
+  - bzip2=1.0.8=hd037594_9
+  - c-ares=1.34.6=hc919400_0
+  - ca-certificates=2026.2.25=hbd8a1cb_0
   - cairo=1.18.4=h191e429_0
-  - certifi=2026.01.04=py312hca03da5_0
+  - cartopy=0.25.0=py312h3f644e9_0
+  - certifi=2026.2.25=pyhd8ed1ab_0
   - cffi=2.0.0=py312h73c2a22_1
+  - cftime=1.6.5=py312hf57c059_1
   - charset-normalizer=3.4.4=py312hca03da5_0
   - click=8.1.8=py312hca03da5_0
   - click-plugins=1.1.1=pyhd3eb1b0_0
@@ -30,6 +34,7 @@ dependencies:
   - decorator=5.2.1=py312hca03da5_0
   - executing=2.2.1=py312hca03da5_0
   - expat=2.7.3=h50f4ffc_4
+  - fiona=1.10.1=py312h50f4ffc_2
   - folium=0.20.0=py312hca03da5_0
   - fontconfig=2.15.0=h29935d0_0
   - fonttools=4.61.0=py312haa24f5a_0
@@ -40,16 +45,19 @@ dependencies:
   - geopandas-base=1.1.1=py312hca03da5_0
   - geos=3.10.6=h313beb8_0
   - geotiff=1.7.0=hcec61be_4
-  - gettext=0.21.0=hbdbcc25_2
+  - gettext=0.25.1=h3dcc1bd_0
+  - gettext-tools=0.25.1=h493aca8_0
   - giflib=5.2.2=h80987f9_0
   - graphite2=1.3.14=hc377ac9_1
   - harfbuzz=10.2.0=he637ebf_1
-  - icu=73.1=h313beb8_0
+  - hdf4=4.2.15=h1a38d6a_5
+  - hdf5=1.14.6=nompi_had3affe_106
+  - icu=73.2=hc8870d7_0
   - idna=3.11=py312hca03da5_0
   - ipykernel=6.31.0=py312h7eb115d_0
   - ipython=9.7.0=py312hca03da5_0
   - ipython_pygments_lexers=1.1.1=py312hca03da5_0
-  - jansson=2.14=h80987f9_1
+  - jansson=2.15.0=h1a92334_0
   - jedi=0.19.2=py312hca03da5_0
   - jinja2=3.1.6=py312hca03da5_0
   - joblib=1.5.3=py312hca03da5_0
@@ -58,35 +66,51 @@ dependencies:
   - jupyter_client=8.6.3=py312hca03da5_1
   - jupyter_core=5.9.1=py312hca03da5_0
   - kiwisolver=1.4.9=py312haeee614_0
+  - krb5=1.22.2=h385eeb1_0
   - lcms2=2.17=h7418793_0
   - lerc=4.0.0=h313beb8_0
+  - libaec=1.1.5=h8664d51_0
   - libarchive=3.8.2=ha845c4f_0
+  - libasprintf=0.25.1=h493aca8_0
+  - libasprintf-devel=0.25.1=h493aca8_0
   - libavif=1.3.0=h839b4eb_0
-  - libcurl=8.17.0=h5bd1c32_0
-  - libcxx=20.1.8=hd7fd590_1
+  - libcurl=8.18.0=hd5a2499_1
+  - libcxx=22.1.0=h55c6f16_1
   - libdeflate=1.22=h80987f9_0
-  - libev=4.33=h1a28f6b_1
+  - libedit=3.1.20250104=pl5321hafb1f1b_0
+  - libev=4.33=h93a5062_2
   - libexpat=2.7.3=h50f4ffc_4
   - libffi=3.4.4=hca03da5_1
+  - libgcc=15.2.0=hcbb3090_18
   - libgdal-core=3.11.4=h6ecf920_0
-  - libgfortran5=15.2.0=hb654fa1_1
+  - libgettextpo=0.25.1=h493aca8_0
+  - libgettextpo-devel=0.25.1=h493aca8_0
+  - libgfortran=15.2.0=h07b0088_18
+  - libgfortran5=15.2.0=hdae7583_18
   - libglib=2.84.4=h7a3292d_0
-  - libiconv=1.16=h80987f9_3
-  - libidn2=2.3.8=h9681e36_0
+  - libiconv=1.18=h23cfdf5_2
+  - libidn2=2.3.8=ha90df94_1
+  - libintl=0.25.1=h493aca8_0
+  - libintl-devel=0.25.1=h493aca8_0
   - libkml=1.3.0=hc4d7c42_7
+  - liblzma=5.8.2=h8088a28_0
+  - liblzma-devel=5.8.2=h8088a28_0
+  - libnetcdf=4.9.2=nompi_h2d3d5cf_118
   - libnghttp2=1.67.1=h8189af8_0
   - libopenblas=0.3.30=hf2bb037_2
   - libopenjpeg=2.5.4=haa24f5a_1
   - libpng=1.6.50=h5c318fc_0
   - libsodium=1.0.20=h897f8a9_0
   - libspatialite=5.1.0=h4e90699_2
+  - libsqlite=3.51.2=h1b79a29_0
   - libssh2=1.11.1=h3e2b118_0
   - libtiff=4.7.1=h367c460_0
-  - libunistring=1.3=h1799b2a_0
+  - libunistring=0.9.10=h3422bc3_0
   - libwebp-base=1.6.0=h92b2d59_0
   - libxml2=2.13.9=h528a072_0
-  - libzlib=1.3.1=h5f15de7_0
-  - llvm-openmp=20.1.8=he822017_0
+  - libzip=1.11.2=h1336266_0
+  - libzlib=1.3.1=h8359307_2
+  - llvm-openmp=22.1.0=hc7d1edf_0
   - lz4-c=1.9.4=h313beb8_1
   - mapclassify=2.10.0=py312hca03da5_0
   - markupsafe=3.0.2=py312h80987f9_0
@@ -94,13 +118,14 @@ dependencies:
   - matplotlib-base=3.10.7=py312haa222d5_0
   - matplotlib-inline=0.2.1=py312hca03da5_0
   - minizip=4.0.3=ha89c15f_0
-  - ncurses=6.5=hee39554_0
+  - ncurses=6.5=h5e97a16_3
   - nest-asyncio=1.6.0=py312hca03da5_0
+  - netcdf4=1.7.2=nompi_py312hd50420b_103
   - networkx=3.6.1=py312hca03da5_0
   - numexpr=2.14.1=py312h5fbe615_0
   - numpy=2.3.5=py312h4bb6f22_0
   - numpy-base=2.3.5=py312h23175f9_0
-  - openssl=3.0.18=h9b4081a_0
+  - openssl=3.6.1=hd24854e_1
   - packaging=25.0=py312hca03da5_1
   - pandas=2.3.3=py312h3f644e9_1
   - parso=0.8.5=py312hca03da5_0
@@ -122,12 +147,14 @@ dependencies:
   - pyparsing=3.2.5=py312hca03da5_0
   - pyproj=3.6.1=py312h4b40952_1
   - pysocks=1.7.1=py312hca03da5_1
-  - python=3.12.12=h2bfc596_1
+  - python=3.12.8=h89a136b_0_cpython
   - python-dateutil=2.9.0post0=py312hca03da5_2
   - python-tzdata=2025.2=pyhd3eb1b0_0
+  - python_abi=3.12=8_cp312
   - pytz=2025.2=py312hca03da5_0
   - pyzmq=27.1.0=py312h5a8c52c_1
   - rasterio=1.4.4=py312h8201ada_0
+  - rasterstats=0.20.0=py312hca03da5_0
   - readline=8.3=h0b18652_0
   - requests=2.32.5=py312hca03da5_1
   - rioxarray=0.18.1=py312hca03da5_0
@@ -136,6 +163,7 @@ dependencies:
   - seaborn=0.13.2=py312hca03da5_3
   - setuptools=80.9.0=py312hca03da5_0
   - shapely=2.1.2=py312h72d6987_0
+  - simplejson=3.20.2=py312haa24f5a_0
   - six=1.17.0=py312hca03da5_0
   - sqlite=3.51.1=hab6afd1_0
   - stack_data=0.6.3=py312hca03da5_0
@@ -151,8 +179,30 @@ dependencies:
   - xarray=2025.12.0=py312hca03da5_0
   - xerces-c=3.3.0=h94d498e_0
   - xyzservices=2025.4.0=py312hca03da5_0
-  - xz=5.6.4=h80987f9_1
+  - xz=5.8.2=hd0f0c4f_0
+  - xz-gpl-tools=5.8.2=hd0f0c4f_0
+  - xz-tools=5.8.2=h8088a28_0
   - zeromq=4.3.5=h2c7f8f0_1
-  - zlib=1.3.1=h5f15de7_0
-  - zstd=1.5.7=h817c040_0
+  - zlib=1.3.1=h8359307_2
+  - zstd=1.5.7=hbf9d68e_6
+  - pip:
+      - bokeh==3.8.2
+      - cloudpickle==3.1.2
+      - dask==2026.1.2
+      - distributed==2026.1.2
+      - fsspec==2026.2.0
+      - geodatasets==2026.1.0
+      - locket==1.0.0
+      - lz4==4.4.5
+      - msgpack==1.1.2
+      - narwhals==2.17.0
+      - partd==1.4.2
+      - pooch==1.9.0
+      - pyarrow==23.0.1
+      - pyshp==3.0.3
+      - pyyaml==6.0.3
+      - sortedcontainers==2.4.0
+      - tblib==3.2.2
+      - toolz==1.1.0
+      - zict==3.0.0
 prefix: /Users/ninap/anaconda3/envs/rsapp_peat
