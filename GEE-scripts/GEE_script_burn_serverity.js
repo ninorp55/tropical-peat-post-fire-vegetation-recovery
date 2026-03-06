@@ -1,4 +1,4 @@
-/// First load the study area in the assets 
+/// The defined study area is pre loaded as an asset in GEE
 
 // ------------------------------------------------------------
 // 1. Load Landsat 8 Collection 2 Level-2
