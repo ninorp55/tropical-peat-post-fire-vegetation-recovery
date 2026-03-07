@@ -13,8 +13,8 @@ Map.centerObject(burn_raster, 5);
 // 2. Define 3-year baseline period
 // (change years if needed)
 // ---------------------------------------------
-var startDate = "2012-08-01";
-var endDate = "2015-07-31"; // 3 full years
+var startDate = "2013-08-01";
+var endDate = "2015-07-31"; // 2 full years
 
 // ---------------------------------------------
 // 3. Load Landsat 8 Collection 2 Level-2
@@ -76,7 +76,7 @@ function addEVI(image) {
 var landsatEVI = landsatMasked.map(addEVI);
 
 // ---------------------------------------------
-// 6. 3-Year Median Composite
+// 6. 2-Year Median Composite
 // ---------------------------------------------
 var medianEVI = landsatEVI.select("EVI").median().toFloat();
 
@@ -90,7 +90,7 @@ Map.addLayer(
     max: 0.8,
     palette: ["brown", "yellow", "green"],
   },
-  "3-Year Median EVI",
+  "2-Year Median EVI",
 );
 
 // ---------------------------------------------
@@ -98,7 +98,7 @@ Map.addLayer(
 // ---------------------------------------------
 Export.image.toDrive({
   image: medianEVI,
-  description: "Landsat_MedianEVI_2012_2015",
+  description: "Landsat_MedianEVI_2013_2015",
   folder: "Landsat_EVI_Baseline",
   region: burn_raster,
   scale: 30,
