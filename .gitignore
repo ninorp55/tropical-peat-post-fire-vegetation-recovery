@@ -37,3 +37,6 @@ input-data/nasa-firms-modis-fire-alerts/
 drainage-channel-processing.qgz
 output-data/study-area/
 input-data/Global-AI_ET0__annual_v3_1/
+02_vegetation_metrcs.ipynb
+03.3_outcome_layers.ipynb
+04_random_forest-Nina.ipynb
