@@ -6,7 +6,8 @@ import xarray as xr
 
 def sel_bounds(xr_obj, mask):
     
-    """Clip a rioxarray array/dataset to the bounding coordinates of a shapefile or another rioxarray object"""
+    """Clip a rioxarray array/dataset to the bounding coordinates of a shapefile or another rioxarray object. 
+    Both must have same CRS."""
 
     if isinstance(mask, gpd.GeoDataFrame):
         xmin = mask.bounds.minx.item()
