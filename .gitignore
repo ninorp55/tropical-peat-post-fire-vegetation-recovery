@@ -22,7 +22,7 @@ __pycache__/
 
 # Data files
 *.vrt
-*.tif
+#*.tif
 *.tif.aux.xml
 *.nc
 *.shp
@@ -30,13 +30,14 @@ __pycache__/
 *.cpg
 *.dbf
 *.prj
+*.qgz
+*.gpkg
 
-input-data/ne_10m_admin_0_countries/
-input-data/ne_110m_admin_0_countries/
-input-data/nasa-firms-modis-fire-alerts/
-drainage-channel-processing.qgz
-output-data/study-area/
-input-data/Global-AI_ET0__annual_v3_1/
-02_vegetation_metrcs.ipynb
-03.3_outcome_layers.ipynb
+#input-data/ne_10m_admin_0_countries/
+#input-data/ne_110m_admin_0_countries/
+input-data/
+output-data/forest/
+output-data/fire-alerts/
+output-data/burned_again.tif
+output-data/borders/
 04_random_forest-Nina.ipynb
