@@ -1,28 +1,12 @@
 .ipynb_checkpoints/
 .DS_Store
-#input-data/fire-history-data/
-#input-data/nasa-firms-modis-fire-alerts/
-#input-data/ESA_IndonesiaCover
-#input-data/indonesia-peatlands-gfw/
-
 .virtual_documents/
 anaconda_projects/
 __pycache__/
 
-#input-data/ne_10m_admin_0_countries/
-#input-data/ne_110m_admin_0_countries/
-#input-data/burned-area/
-#input-data/modis-evi-test/
-#output.nc.aux.xml
-#output.nc
-#input-data/land-cover/
-#study_area.*
-#output-data/
-#input-data/EVI/
-
 # Data files
 *.vrt
-#*.tif
+*.tif
 *.tif.aux.xml
 *.nc
 *.shp
@@ -33,11 +17,8 @@ __pycache__/
 *.qgz
 *.gpkg
 
-#input-data/ne_10m_admin_0_countries/
-#input-data/ne_110m_admin_0_countries/
-input-data/
-output-data/forest/
-output-data/fire-alerts/
-output-data/burned_again.tif
-output-data/borders/
+# specific files/directories
 04_random_forest-Nina.ipynb
+input-data/Global-AI_ET0__annual_v3_1/
+input-data/archive/
+input-data/nasa-firms-modis-fire-alerts/
