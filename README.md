@@ -1,32 +1,41 @@
-# Factors influencing vegetation recovery after wildfires in Indonesian peatlands
+# Multiple factors drive post-fire vegetation recovery in tropical peat forests
+# A random forest study in Kalimantan, Indonesia
 
-# Group project for Remote Sensing Applications
-
-Link to shared Google Doc: 
-https://docs.google.com/document/d/1qTkcDyN7AtKCjYgG5d_xGhStIbaDFv-rOpp8YKx7Ukg/edit?usp=sharing
-
-Link to slides for first project draft presentation:
-https://docs.google.com/presentation/d/1hMx8IagdemcvNNVpfwhAvoVakXih--StNohOCC3tltI/edit?usp=sharing
-
-Link to LaTeX document on Overleaf:
-https://www.overleaf.com/project/696a338e211af76d4c3df0c2
-
-Link to summary paper for introduction: 
-https://docs.google.com/document/d/13DtL6uRsZnSTXM3pWjAFqBn9h_4MvUC36HL-B6t8rNs/edit?usp=sharing
+This repository contains the code for a project about the factors influencing post-fire vegetation recovery in tropical peat forests in Indonesia. It was developed as part of the course 'Introduction to Global Remote Sensing Data Products' by Prof. Jian Peng at the University of Leipzig.
 
 ## Contents
 
-The repository contains the following files:
+`main.tex`
 
-#### `first_data_exploration.ipynb` (Nina)
-- load in datasets and explore them visually
-    - fire history image (yearly fire frequency) from Global forest watch (abandoned because RGB, not original data)
-    - fire history (NASA FIRMS Modis fire alerts)
-    - peat land map from Global Forest Watch (abandoned because old and not verifiable)
+TeX document that can be used to generate the report PDF
+
+`1_study_area.ipynb`
+
+Jupyter Notebook used to identify the pixels we used as our study area
+
+`2_vegetation_recovery_metrics.ipynb`
+
+Jupyter Notebook used to calculate vegetation recovery rates for our study area
+
+`3_predictors.ipynb`
+
+Jupyter Notebook for preprocessing of predictor layers
+
+`4_random_forest.ipynb`
+
+Jupyter Notebook for preparing, conducting, and evaluating the random forest prediction of vegetation recovery based on predictors
+
+`GEE_scripts.js`
+
+JavaScript file used to retrieve MODIS data from Google Earth Engine
+
+`environment.yml`
+
+YAML file for reconstructing the conda environment needed to run the Jupyter notebooks, see instructions below
     
 ## How to activate environment
 
-To activate the Python environment with all the necessary modules, run the following in the JupyterLab terminal (after navigating to the directory where `environment.yml` is stored, if necessary):
+To activate the Python environment with all the necessary libraries, run the following in the JupyterLab terminal (after navigating to the directory where `environment.yml` is stored, if necessary):
 
 ```
 conda env create -f environment.yml
