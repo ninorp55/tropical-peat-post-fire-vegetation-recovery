@@ -14,5 +14,6 @@ dependencies:
   - seaborn=0.13
   - matplotlib=3.10
   - rasterstats=0.20
+  - scikit-learn=1.8
   - dask=2026.1
   - ipykernel
