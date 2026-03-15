@@ -1,13 +1,12 @@
 # Definitions of custom functions used across notebooks
 
-# 1. function to filter xarray file spatially based on shapefile
+# 1. function to filter xarray file spatially based on shapefile 
 import geopandas as gpd
 import xarray as xr
 
 def sel_bounds(xr_obj, mask):
     
-    """Clip a rioxarray array/dataset to the bounding coordinates of a shapefile or another rioxarray object. 
-    Both must have same CRS."""
+    """Clip a rioxarray array/dataset to the bounding coordinates of a shapefile or another rioxarray object. Both must have the same CRS."""
 
     if isinstance(mask, gpd.GeoDataFrame):
         xmin = mask.bounds.minx.item()
