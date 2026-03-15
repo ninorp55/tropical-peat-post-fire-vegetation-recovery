@@ -5,7 +5,7 @@ This repository contains the code for a project about the factors influencing po
 
 ## Contents
 
-`main.tex`
+`report.tex`
 
 TeX document that can be used to generate the report PDF
 
